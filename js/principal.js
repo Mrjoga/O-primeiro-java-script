@@ -1,6 +1,6 @@
 var titulo = document.querySelector(".titulo");
 
-titulo.textContent = "Aparecida Nutricionista"
+titulo.textContent = "Aparecida Nutricionista";
 
 var Paulo = document.querySelector('#linhaPaulo');
 var pesoPaulo = parseFloat(Paulo.querySelector('.info-peso').textContent);
