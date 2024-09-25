@@ -1,12 +1,13 @@
 var titulo = document.querySelector(".titulo");
-
 titulo.textContent = "Aparecida Nutricionista";
 
-var Paulo = document.querySelector('#linhaPaulo');
-var pesoPaulo = parseFloat(Paulo.querySelector('.info-peso').textContent);
-var alturaPaulo = parseFloat(Paulo.querySelector('.info-peso').textContent);
+var pacientes = document.querySelectorAll(".paciente");
 
-alturaPaulo = alturaPaulo / 100;
-var imcPaulo = pesoPaulo / (alturaPaulo * alturaPaulo);
+pacientes.forEach(function(paciente) {
+    var peso = parseFloat(paciente.querySelector(".info-peso").textContent);
+    var altura = parseFloat(paciente.querySelector(".info-altura").textContent);
 
-Paulo.querySelector('.info-imc').textContent = imcPaulo;
+    var imc = peso / (altura * altura);
+
+    paciente.querySelector(".info-imc").textContent = imc.toFixed(2);  // Exibindo o IMC com 2 casas decimais
+});
