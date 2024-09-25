@@ -9,5 +9,5 @@ pacientes.forEach(function(paciente) {
 
     var imc = peso / (altura * altura);
 
-    paciente.querySelector(".info-imc").textContent = imc.toFixed(2);  // Exibindo o IMC com 2 casas decimais
+    paciente.querySelector(".info-imc").textContent = imc.toFixed(2); 
 });
